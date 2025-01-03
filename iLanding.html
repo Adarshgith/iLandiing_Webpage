@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>iLanding Website</title>
+</head>
+<body class="bg-white">
+    <div class="container mx-auto max-lg:px-4">
+
+        <!-- Navbar -->
+        <div class="navbar flex justify-between bg-gray-50 px-10 py-2 mt-5 rounded-full max-lg:py-0">
+            <div class="logo mt-2">
+                <p class="text-2xl text-violet-900 font-bold cursor-pointer">iLanding</p>
+            </div>
+            <div class="list py-3">
+                <ul class="hidden lg:flex space-x-6 mx-20 text-gray-600 font-medium cursor-pointer">
+                    <li class="text-blue-600">Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Feature</li>
+                    <li>Drop</li>
+                    <li>Download</li>
+                </ul>
+            </div>
+
+            <div class="button mt-1">
+                <button class="bg-blue-600 rounded-3xl text-white px-4 py-1 text-lg">Get Started </button>
+            </div>
+
+            <!-- Hamburger icon for small screens -->
+            <div class="lg:hidden flex items-center" id="hamburger">
+                <button class="text-black" onclick="toggleMenu()">
+                    <span class="block w-6 h-1 bg-black mb-2"></span>
+                    <span class="block w-6 h-1 bg-black mb-2"></span>
+                    <span class="block w-6 h-1 bg-black"></span>
+                </button>
+            </div>
+
+
+                    <!-- Mobile Menu -->
+            <ul id="mobile-menu" class="lg:hidden hidden space-y-4 text-center mt-5 font-bold ">
+                <li class="text-red-600">Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Feature</li>
+                <li>Dropdown</li>
+                <li>Service</li>
+
+                
+            </ul>
+            
+
+
+            <script>
+                // Toggle mobile menu visibility
+                function toggleMenu() {
+                    const menu = document.getElementById("mobile-menu");
+                    menu.classList.toggle("hidden");
+                }
+            </script>
+
+
+
+        </div>
+
+        <!-- Home-section -->
+
+        <div class="home">
+            <div class="home-content grid grid-cols-2 gap-4 max-lg:flex flex-col">
+
+
+                <div class="first-part ">
+
+                    <div class="working-for flex px-2 py-3 bg-blue-100 w-60 rounded-full mt-32 max-lg:mx-auto ">
+                        <img src="settings.png" class="w-6" alt="">
+                        <P class="text-blue-500 px-2 font-medium">Working for your success</P>
+                    </div>
+
+                    <div class="main-section-heading py-5 ">
+                        <h1 class="text-6xl w-full text-gray-600 font-medium py-2 max-lg:text-center max-lg:text-balance max-lg:text-6xl max-lg:py-0">Maecenas Vitae Consectetur Led <span class="text-blue-600 font-medium">Vestibulum Ante</span></h1>
+                        
+                    </div>
+
+                    <div class="main-para">
+                        <p class="text-black max-lg:text-center">Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+                    </div>
+
+                    <div class="play-btn py-16 flex max-lg:justify-center">
+                        <div class="btn">
+                            <button class="bg-blue-600 rounded-3xl text-white px-8 py-2 text-lg">Get Started </button>
+                        </div>
+                        <div class="play-video">
+                            <p class="text-black mx-10 text-2xl font-medium">Play Video</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Second-Part -->
+
+                <div class="second-part">
+                    <img src="illustration-1.webp" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Achievement-section -->
+
+        <div class="award-section py-12">
+            <div class="start grid grid-cols-4 gap-6 bg-gray-100 p-16 rounded-xl max-lg:grid max-lg:grid-cols-2  max-md:grid max-md:grid-cols-1 ">
+
+             <!-- Won-Award -->
+
+                <div class="won-award flex max-lg:py-12">
+                    <div class="trophy mt-1 hover:bg-sky-200 rounded-2xl px-2 py-2">
+                        <img src="trophy.png" class="w-8" alt="">
+                    </div>
+                    <div class="award-text mx-6">
+                        <div class="text-1">
+                            <p class="text-xl">3x Won Award</p>
+                        </div>
+                        <div class="text-1">
+                            <p>Vestibulum ante ipsum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Faucibus -->
+
+                <div class="won-award flex max-lg:py-12">
+                    <div class="trophy mt-1 hover:bg-sky-200 rounded-2xl px-2 py-2">
+                        <img src="mail.png" class="w-8" alt="">
+                    </div>
+                    <div class="award-text mx-6">
+                        <div class="text-1">
+                            <p class="text-xl">3x Won Award</p>
+                        </div>
+                        <div class="text-1">
+                            <p>Vestibulum ante ipsum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 80k Mauris -->
+
+                <div class="won-award flex max-lg:py-12">
+                    <div class="trophy mt-1 hover:bg-sky-200 rounded-2xl px-2 py-2">
+                        <img src="profits.png" class="w-8" alt="">
+                    </div>
+                    <div class="award-text mx-6">
+                        <div class="text-1">
+                            <p class="text-xl">3x Won Award</p>
+                        </div>
+                        <div class="text-1">
+                            <p>Vestibulum ante ipsum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phasellus -->
+
+                <div class="won-award flex max-lg:py-12">
+                    <div class="trophy mt-1 hover:bg-sky-200 rounded-2xl px-2 py-2">
+                        <img src="badge.png" class="w-8" alt="">
+                    </div>
+                    <div class="award-text mx-6">
+                        <div class="text-1">
+                            <p class="text-xl">3x Won Award</p>
+                        </div>
+                        <div class="text-1">
+                            <p>Vestibulum ante ipsum</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- More-About-Us -->
+
+        <div class="more-about-us py-16 w-full">
+            <div class="start grid grid-cols-2 gap-4 max-lg:flex flex-col max-lg:text-center">
+
+                <div class="first-part">
+                    <div class="about-us-heading">
+                        <p class="text-blue-500 font-bold py-3 text-xl">MORE ABOUT US</p>
+                    </div>
+    
+                    <div class="voluptas">
+                        <p class="text-3xl font-medium">Voluptas enim suscipit temporibus</p>
+                    </div>
+    
+                    <div class="about-us-info py-4 w-10/12 max-lg:w-full">
+                        <p class="text-justify max-lg:text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beataed?</p>
+                    </div>
+                    <!-- Check-boxes -->
+                    <div class="main-check flex mt-5 max-lg:flex flex-col ">
+                        <div class="first-check flex max-lg:justify-center">
+                            <img src="check.png" class="w-6" alt="">
+                            <p class="px-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <div class="first-check flex mt-5 max-lg:mx-0 max-lg:py-2 max-lg:justify-center">
+                            <img src="check.png" class="w-6" alt="">
+                            <p class="px-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="main-check flex mt-5 max-lg:flex flex-col">
+                        <div class="first-check flex max-lg:justify-center">
+                            <img src="check.png" class="w-6" alt="">
+                            <p class="px-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <div class="first-check flex mt-5  max-lg:mx-0 max-lg:py-2 max-lg:justify-center">
+                            <img src="check.png" class="w-6" alt="">
+                            <p class="px-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="main-check flex mt-5 max-lg:flex flex-col">
+                        <div class="first-check flex max-lg:justify-center">
+                            <img src="check.png" class="w-6" alt="">
+                            <p class="px-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+
+                        <div class="first-check flex mt-5 max-lg:mx-0 max-lg:py-2 max-lg:justify-center">
+                            <img src="check.png" class="w-6" alt="">
+                            <p class="px-2">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    
+                <div class="ceo-contact flex flex-row py-10 max-lg:flex max-lg:flex-row max-lg:justify-center max-md:flex ">
+
+                    <!-- Mario-profile -->
+                    <div class="mario flex max-md:justify-center max-md:py-2 max-lg:justify-center">
+                        <div class="mario-pic">
+                            <img src="mario_CEO.avif" class="w-10 rounded-full" alt="">
+                        </div>
+
+                        <div class="mario-name px-5">
+                            <p class="text-xl">Mario Smith</p>
+                            <p class="text-blue-700">CEO & Founder</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Mario-contact -->
+
+                    <div class="mario flex bg-gray-100 px-4 w-52 py-1 rounded-xl">
+                        <div class="mario-pic">
+                            <img src="phone-call.png" class="w-6 mt-4 mx-2 rounded-full" alt="">
+                        </div>
+
+                        <div class="mario-name ">
+                            <p class="text-gray-600">Call us anytime</p>
+                            <p class="text-black font-bold">+324656564</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                </div>
+
+
+                <div class="second-part mx-10 w-full max-lg:mx-0">
+                    <img src="about-2.avif" class="rounded-lg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Features -->
+
+        <div class="feature text-center py-10">
+            <p class="text-4xl font-medium text-gray-600">Features</p>
+            <span class="block w-16 h-1 bg-blue-500 mb-2 mx-auto mt-6"></span>
+            <p class="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, impedit. Lorem ipsum dolor sit amet.</p>
+
+            <div class="four-card">
+                <div class="start grid grid-cols-4 gap-8 py-5 max-lg:grid max-lg:grid-cols-2 max-sm:grid max-sm:grid-cols-1">
+
+
+                    <div class="card bg-orange-100 p-4 rounded-lg">
+                        <img src="badge.png" class="w-10 py-4" alt="">
+                        <p class="text-2xl text-start py-2 font-medium">Corporis Volptates</p>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt accusantium, autem aliquid molestiae aliquam?</p>
+                    </div>
+
+                    <div class="card bg-green-100 p-4 rounded-lg">
+                        <img src="trophy.png" class="w-10 py-4" alt="">
+                        <p class="text-2xl text-start py-2 font-medium">Corporis Volptates</p>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt accusantium, autem aliquid molestiae aliquam?</p>
+                    </div>
+
+                    <div class="card bg-red-100 p-4 rounded-lg">
+                        <img src="settings.png" class="w-10 py-4" alt="">
+                        <p class="text-2xl text-start py-2 font-medium">Corporis Volptates</p>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt accusantium, autem aliquid molestiae aliquam?</p>
+                    </div>
+
+                    <div class="card bg-violet-100 p-4 rounded-lg">
+                        <img src="mail.png" class="w-10 py-4" alt="">
+                        <p class="text-2xl text-start py-2 font-medium">Corporis Volptates</p>
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt accusantium, autem aliquid molestiae aliquam?</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
